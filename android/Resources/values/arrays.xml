@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="filter_group">
+        <item>None</item>
+        <item>Day</item>
+        <item>Month</item>
+        <item>Site</item>
+        <item>Length</item>
+    </string-array>
+
+    <string-array name="filter_order">
+        <item>Newest first</item>
+        <item>Oldest first</item>
+        <item>Shortest first</item>
+        <item>Longest first</item>
+    </string-array>
+
+    <string-array name="filter_length">
+        <item>All</item>
+        <item>Short</item>
+        <item>Medium</item>
+        <item>Long</item>
+    </string-array>
+
+    <string-array name="filter_favorites">
+        <item>All</item>
+        <item>Only favorites</item>
+        <item>Only unfavorites</item>
+    </string-array>
+
+    <string-array name="filter_sites">
+        <item>444.hu</item>
+        <item>hvg.hu</item>
+        <item>index.hu</item>
+        <item>origo.hu</item>
+    </string-array>
+
+    <string-array name="filter_tags">
+        <item>news</item>
+        <item>technology</item>
+        <item>mobile</item>
+        <item>science</item>
+    </string-array>
+
+</resources>

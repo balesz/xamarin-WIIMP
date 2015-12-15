@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AppTheme">
+        <attr name="appButton" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="AppTheme.Filter">
+        <attr name="filterDivider" format="reference"/>
+        <attr name="filterHeader" format="reference"/>
+        <attr name="filterItem" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="FilterItemView">
+        <attr name="title"/>
+        <attr name="subtitle"/>
+    </declare-styleable>
+
+    <declare-styleable name="ListFilterItemView">
+        <attr name="entries" format="reference"/>
+        <attr name="multi_select" format="boolean"/>
+    </declare-styleable>
+
+</resources>

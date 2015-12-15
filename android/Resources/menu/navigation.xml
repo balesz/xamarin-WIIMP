@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" android:id="@+id/navigation_main">
+        <item android:title="My List" />
+        <item android:title="Favorites" />
+        <item android:title="Archive" />
+    </group>
+    <group android:checkableBehavior="single" android:id="@+id/navigation_secondary">
+        <item android:title="Articles" />
+        <item android:title="Images" />
+        <item android:title="Videos" />
+    </group>
+    <group android:checkableBehavior="none" android:id="@+id/navigation_other">
+        <item android:title="Help" />
+        <item android:title="Settings" />
+    </group>
+</menu>

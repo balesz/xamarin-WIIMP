@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatButton
+        android:text="Apply"
+        style="?attr/appButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/filter_apply" />
+    <android.support.v7.widget.AppCompatButton
+        android:text="Reset"
+        style="?attr/appButton"
+        android:layout_toLeftOf="@id/filter_apply"
+        android:layout_toStartOf="@id/filter_apply"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/filter_reset" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_above="@id/filter_apply"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/filter_scroll">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:theme="@style/AppTheme.Filter"
+            tools:ignore="ContentDescription">
+            <android.support.v7.widget.AppCompatTextView
+                style="?attr/filterHeader"
+                android:text="HELLO WORLD" />
+            <net.solutinno.wiimp.widgets.ListFilterItemView
+                style="?attr/filterItem"
+                app:title="Group by"
+                app:entries="@array/filter_group"
+                android:id="@+id/group_by" />
+            <net.solutinno.wiimp.widgets.ListFilterItemView
+                style="?attr/filterItem"
+                app:title="Order by"
+                app:entries="@array/filter_order"
+                android:id="@+id/order_by" />
+            <android.support.v7.widget.AppCompatTextView
+                style="?attr/filterDivider" />
+            <android.support.v7.widget.AppCompatTextView
+                style="?attr/filterHeader"
+                android:text="Filter" />
+            <net.solutinno.wiimp.widgets.DateFilterItemView
+                style="?attr/filterItem"
+                app:title="From"
+                app:subtitle="No date selected"
+                android:id="@+id/date_from" />
+            <net.solutinno.wiimp.widgets.DateFilterItemView
+                style="?attr/filterItem"
+                app:title="To"
+                app:subtitle="No date selected"
+                android:id="@+id/date_to" />
+            <net.solutinno.wiimp.widgets.ListFilterItemView
+                style="?attr/filterItem"
+                app:title="Length"
+                app:entries="@array/filter_length"
+                android:id="@+id/length" />
+            <net.solutinno.wiimp.widgets.ListFilterItemView
+                style="?attr/filterItem"
+                app:title="Favorites"
+                app:entries="@array/filter_favorites"
+                android:id="@+id/favorites" />
+            <net.solutinno.wiimp.widgets.ListFilterItemView
+                style="?attr/filterItem"
+                app:title="Sites"
+                app:subtitle="All"
+                app:multi_select="true"
+                app:entries="@array/filter_sites"
+                android:id="@+id/sites" />
+            <net.solutinno.wiimp.widgets.ListFilterItemView
+                style="?attr/filterItem"
+                app:title="Tags"
+                app:subtitle="All"
+                app:multi_select="true"
+                app:entries="@array/filter_tags"
+                android:id="@+id/tags" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>
